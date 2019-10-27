@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title }} Html</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  {{>header}} 
+  <p>Sample Html code foe express to render (HBS) {{ title }} - by {{ name }} ...</p>
+  <form>
+    <input type="text" name="location" placeholder="please enter city name" />
+    <button>Search</button>
+  </form>
+  <p id="message-0"></p>
+  <p id="message-1"></p>
+  <p id="message-2"></p>
+  <script src="/js/app.js"></script>
+</body>
+</html>
