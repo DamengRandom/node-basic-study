@@ -116,5 +116,5 @@ app.get('*', (req, res) => { // * means no match path / route
 
 // start server:
 app.listen(port, () => {
-  console.log(`Server is up on ${port} ..`);
+  console.log(`Server is up ..`);
 });
