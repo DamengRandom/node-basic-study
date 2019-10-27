@@ -115,6 +115,4 @@ app.get('*', (req, res) => { // * means no match path / route
 });
 
 // start server:
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Server is up ..`);
-});
+app.listen(process.env.PORT || 3000);
