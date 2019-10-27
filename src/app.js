@@ -3,12 +3,12 @@ const express = require('express');
 const hbs = require('hbs');
 const getGeoData = require('./utils/getGeoData');
 const getWeather = require('./utils/getWeather');
-const port = process.env.PORT || 3009;
 
 // console.log(__dirname);
 // console.log(path.join(__dirname, '../public'));
 
 const app = express(); // initial express function
+const port = process.env.PORT || 3000;
 
 const publicDirectoryPath = path.join(__dirname, '../public');
 // hbs files path config:
@@ -115,6 +115,6 @@ app.get('*', (req, res) => { // * means no match path / route
 });
 
 // start server:
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is up ..`);
 });
